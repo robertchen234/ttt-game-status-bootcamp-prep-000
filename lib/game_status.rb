@@ -47,6 +47,6 @@ end
 
 def winner(board)
   if won?(board)
-    return board.detect[win]
+    return board.detect("X")
   end
 end
