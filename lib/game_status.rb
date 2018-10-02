@@ -32,5 +32,5 @@ def full?(board)
     empty == "" || empty == " " || empty == nil
     return false
   end
-  return false
+  return true
 end
