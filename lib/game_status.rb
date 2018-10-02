@@ -30,3 +30,11 @@ end
 def full?(board)
   return true unless board.include?(" ")
 end
+
+def draw?(board)
+  if !board.won? && board.full?
+    return true
+  elsif (!board.won? && !board.full?) || board.won?
+    return false
+  end
+end
