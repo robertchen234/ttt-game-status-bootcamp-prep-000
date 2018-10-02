@@ -28,9 +28,10 @@ def won?(board)
 end
 
 def full?(board)
-  board.detect do |empty|
+  if board.detect do |empty|
     empty == "" || empty == " " || empty == nil
     return false
+  else
+    return true
   end
-  return true
 end
