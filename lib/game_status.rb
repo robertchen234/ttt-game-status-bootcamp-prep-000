@@ -44,3 +44,8 @@ def over?(board)
     true
   end
 end
+
+def winner(board)
+  if won?(board)
+    return board.detect[win]
+end
