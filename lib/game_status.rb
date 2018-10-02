@@ -28,7 +28,5 @@ def won?(board)
 end
 
 def full?(board)
-  !board.include? do |empty|
-    empty == "" || empty == " " || empty == nil
-  end
+  return true unless board.include?(" ")
 end
