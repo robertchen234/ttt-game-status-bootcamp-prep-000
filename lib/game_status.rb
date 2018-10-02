@@ -48,4 +48,5 @@ end
 def winner(board)
   if won?(board)
     return board.detect[win]
+  end
 end
